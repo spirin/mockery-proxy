@@ -1,6 +1,6 @@
-module github.com/spirin/moxery
+module github.com/spirin/mockery-proxy
 
-go 1.24.2
+go 1.23.0
 
 require github.com/vektra/mockery/v2 v2.53.3
 
