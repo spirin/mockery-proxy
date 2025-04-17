@@ -1,6 +1,6 @@
 # mockery-proxy
 
-A compatibility wrapper that enables legacy `mockery` v2-style CLI usage on projects that depend on the newer `mockery` v3.
+A compatibility wrapper that enables v2-style CLI usage for `mockery` v3.
 
 ## Purpose
 
@@ -29,20 +29,20 @@ mv "$GOPATH/bin/mockery-proxy" "$GOPATH/bin/mockery"
 with drop-in replacement:
 
 ```bash
-mockery --name MyInterface --inpackage --case underscore
+mockery --name MyInterface --inpackage --case underscore ...etc
 ```
 
 or without drop-in replacement:
 
 ```bash
-mockery-proxy --name MyInterface --inpackage --case underscore
+mockery-proxy --name MyInterface --inpackage --case underscore ...etc
 ```
 
 Behaves exactly as if you were using `mockery v2`.
 
 ### v3-style passthrough
 
-If the `--config` flag is passed, or no arguments are provided, the proxy forwards the call directly to the `mockery` binary installed in your system.
+If the `--config` flag is passed, or no arguments are provided, the proxy forwards the call directly to the `mockery v3` binary installed in your system.
 
 with drop-in replacement:
 
@@ -63,6 +63,8 @@ mockery-proxy --config .mockery.yml
 ```bash
 mockery-proxy
 ```
+
+Commands like `completion`, `help`, `init`, `migrate`, `showconfig`, `version` are also passed to v3
 
 ## License
 
