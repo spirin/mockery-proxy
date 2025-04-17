@@ -2,7 +2,7 @@ module github.com/spirin/mockery-proxy
 
 go 1.23.0
 
-require github.com/vektra/mockery/v2 v2.53.3
+require github.com/vektra/mockery/v2 v2.53.2
 
 require (
 	github.com/chigopher/pathlib v0.19.1 // indirect

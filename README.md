@@ -11,7 +11,7 @@ A compatibility wrapper that enables legacy `mockery` v2-style CLI usage on proj
 ## Installation
 
 ```bash
-go install github.com/spirin/mockery-proxy
+go install github.com/spirin/mockery-proxy@latest
 ```
 
 ## Usage
